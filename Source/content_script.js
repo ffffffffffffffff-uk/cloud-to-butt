@@ -67,7 +67,7 @@ function handleText(textNode)
 	v = v.replace(/\bthe Cloud\b/g, "my Butt");
 	v = v.replace(/\bthe cloud\b/g, "my butt");
 	v = v.replace(/\bAbout COVID-19\b/gi, function (x) { return x.replace("COVID-19","trains")} );
-
+	v = v.replace(/\bof COVID-19\b/gi, function (x) { return x.replace("COVID-19","trains")} );
 
 	// avoid infinite series of DOM changes
 	if (v !== oldValue) {
